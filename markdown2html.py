@@ -10,7 +10,7 @@ import os.path
 if __name__ == "__main__":
     """run the code"""
     if len(sys.argv) < 3:
-        print("Usage: ./markdown2html.py README.md README.html")
+        print("Usage: ./markdown2html.py README.md README.html", file=sys.stderr)
         sys.exit(1)
         
     if not os.path.isfile(sys.argv[1]):
