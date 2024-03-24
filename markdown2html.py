@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-"""an argument with first argument a markdown and the second
-    argument is the output file name
-"""
+"""Converts Markdown to HTML with other features"""
 
 import sys
 import os.path
-import hashlib
 import re
+import hashlib
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
@@ -21,7 +19,7 @@ if __name__ == '__main__':
     with open(sys.argv[1]) as read:
         with open(sys.argv[2], 'w') as html:
             unordered_start, ordered_start, paragraph = False, False, False
-            # doing bold syntax
+            # bold syntax
             for line in read:
                 line = line.replace('**', '<b>', 1)
                 line = line.replace('**', '</b>', 1)
@@ -60,7 +58,7 @@ if __name__ == '__main__':
                     if not unordered_start:
                         html.write('<ul>\n')
                         unordered_start = True
-                    line = '<li>' + unordered.strip() + '</li>\n'
+                    line = '    <li>' + unordered.strip() + '</li>\n'
                 if unordered_start and not unordered_no:
                     html.write('</ul>\n')
                     unordered_start = False
@@ -69,7 +67,7 @@ if __name__ == '__main__':
                     if not ordered_start:
                         html.write('<ol>\n')
                         ordered_start = True
-                    line = '<li>' + ordered.strip() + '</li>\n'
+                    line = '    <li>' + ordered.strip() + '</li>\n'
                 if ordered_start and not ordered_no:
                     html.write('</ol>\n')
                     ordered_start = False
