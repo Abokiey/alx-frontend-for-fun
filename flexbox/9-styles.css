@@ -377,7 +377,7 @@
     flex-wrap: wrap;
   }
 
-  /* Section ABOUT US ====*/
+  /* Section ABOUT US ============================= */
   .section-about-us [class*='col-'] {
     align-items: center;
   }
