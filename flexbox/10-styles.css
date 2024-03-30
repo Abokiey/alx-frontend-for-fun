@@ -177,14 +177,13 @@
   
   .row {
     display: flex;
-  }
+  }    
 
   ul.row {
     margin: -1rem;
     padding: 0;
     list-style: none;
   }
-  
   
   [class*='col-'] {
     margin: 1rem;
@@ -201,7 +200,6 @@
   /* Navbar
       ============================= */
   
-  
   .nav {
     display: flex;
     margin: 0;
@@ -209,6 +207,7 @@
     list-style: none;
     text-align: center;
   }
+
   .nav .nav-item + .nav-item {
     margin: var(--nav-item-margin);
   }
@@ -218,7 +217,6 @@
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
-    
   }
   
   .nav .nav-link {
@@ -250,20 +248,19 @@
   
   /* Header
       ============================= */
-
+  
   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .header {
     padding: var(--header-padding);
-         position: relative;
-         z-index: 3;
-         background: transparent;
+    position: relative;
+    z-index: 3;
+    background: transparent;
   }
-  
   
   /* Footer
       ============================= */
@@ -353,17 +350,11 @@
     margin-top: -8.5rem;
   }
 
-  .section-hero .section-
-
-  .hero-homepaage {
+  .hero-homepage {
     background-position: 75% 0;
     background-repeat: no-repeat;
     background-size: 90rem auto;
     background-color: #010101;
-  }
-  
-  .section-hero .section-title {
-    margin-bottom: 5rem;
   }
 
   .section-hero .section-body {
@@ -374,6 +365,10 @@
     color: var(--color-white);
     text-transform: uppercase;
   }
+
+  .section-hero .section-title {
+    margin-bottom: 5rem;
+  }
   
   .section-hero .section-inner {
     display: flex;
@@ -383,21 +378,25 @@
     min-height: 50vh;
   }
 
-  /* Section Latest news ============================= */
+  /* Section Latest news 
+      ============================= */
+    
   .section-latest-news .row {
     flex-direction: row-reverse;
   }
 
-  /* Section SERVICES ============================= */
+  /* Section SERVICES 
+      ============================= */
+
   .section-services .row {
     flex-wrap: wrap;
   }
 
   /* Section ABOUT US
       ============================= */
-      .section-about-us [class*='col-'] {
-        align-self: center;
-      }
+  .section-about-us [class*='col-'] {
+    align-self: center;
+  }
   
   /*** 4. CARD ***/
   
