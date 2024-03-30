@@ -527,15 +527,15 @@
   }
 
   /*** ARTICLE PAGE ***/
-/* Section HERO (article)
-    ============================= */
 
-.hero-article {
+  /* Section HERO (article)
+      ============================= */
+  .hero-article {
     background-size: 150rem 100rem;
     background-position: 50% 0;
-}
+  }
 
-.hero-article::before {
+  .hero-article::before {
     content: "";
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
@@ -544,81 +544,81 @@
     left: 0;
     bottom: 0;
     z-index: 0;
-}
+  }
 
-.hero-article .section-inner {
+  .hero-article .section-inner {
     text-align: center;
     align-items: center;
     min-height: 40vh;
-}
+  }
 
-.hero-article .section-body {
+  .hero-article .section-body {
     position: relative;
     padding: 7rem 0 0;
     z-index: 2;
-}
+  }
 
-.main-article {
+  .main-article {
     padding: 5rem 0;
-}
+  }
 
-/* Post
-    ============================= */
+  /* Post
+      ============================= */
 
-.post {
+  .post {
     display: flex;
-}
-
-.post-content {
+   }
+    
+  .post-content {
     width: 100%;
-}
-
-.post-aside {
+   }
+    
+  .post-aside {
     order: -1;
     min-width: 20%;
-}
+  }
 
-/* Post Meta
+   /* Post Meta
     ============================= */
 
-.post-meta-list {
+  .post-meta-list {
     flex-direction: column;
-}
-
-.post-meta-list strong{
+   }
+    
+   .post-meta-list strong {
     color: var(--color-primary);
     font-size: var(--font-size-small);
     text-transform: uppercase;
     display: block;
-}
-
-.post-meta-list [class*='post-meta-'] {
+   }
+    
+   .post-meta-list [class*='post-meta-'] {
     margin-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
     border-bottom: 0.2rem solid var(--color-light-grey);
-}
-
-.post-meta-list [class*= "post-meta"]:last-child {
+   }
+    
+   .post-meta-list [class*='post-meta-']:last-child {
     border: none;
     margin-bottom: 3rem;
-}
-
-/* Tag list
-    ============================= */
-
-.tag-list {
+   }
+    
+   /* Tag list
+      ============================= */
+    
+   .tag-list {
     padding: 0;
     list-style: none;
-}
-
-.tag-list li {
+   }
+    
+   .tag-list li {
     display: inline;
-}
-
-.tag-list li::after {
+   }
+    
+   .tag-list li::after {
     content: ", ";
-}
-
-.tag-list li:last-child::after {
+   }
+    
+   .tag-list li:last-child::after {
     content: "";
-}
+   }
